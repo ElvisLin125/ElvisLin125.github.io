@@ -1,78 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Elvis Lin">
-        <meta name="description" content="Elvis' Portfolio Website">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        <link rel="stylesheet" href="styles/portfolio.css">
-        <link href="https://fonts.googleapis.com/css?family=Chivo:300,700%7CPlayfair+Display:700i" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/styles/portfolio.css">
-        <link rel="icon" href="styles/using_laptop.svg">
-        <link rel="stylesheet" href="/styles/all.min.css">
-        <title>Projects</title>
-    </head>
-    <body>
-        
-        <nav class="navbar navbar-expand-sm navbar-light bg-light" id="elvis-nav">
-            <a class="navbar-brand" href="index.html"><img style="height: 3em;" src="styles/using_laptop.svg" alt="navbar logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">About</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <div style="height: 6em; width: 100%"></div>
-          <div class="container-fluid" id="project-section">
-            <div class="row" id="projects-intro">
-                <div class="col-sm-12">
-                    <h1>Projects</h1>
-                    <p>These are projects I've done to learn skills such as React and version control.</p>
-                </div>
-            </div>
-            <div class="row" id="project-row">
-              <div class="col-sm-4">
-                  <div class="project-card">
-                      <h1>Tomatodoro Timer</h1>
-                      <div id="tomatodoro"></div>
-                      <p></p>
-                      <p>Project to learn React.</p>
-                      <a href="https://tomatodoro.netlify.app/"><em class="fas fa-external-link-alt"></em> Demo</a>
-                    </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="project-card">
-                    <h1>COVID-19 Tracker</h1>
-                    <div id="covid"></div>
-                    <p></p>
-                    <p>Hackathon project.</p>
-                    <a href="https://github.com/JustCasuallyJames/Covid-Tracker"><em class="fas fa-external-link-alt"></em> Demo</a>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="project-card">
-                    <h1>Dogelon Much Game</h1>
-                    <div id="dogelon"></div> 
-                    <p></p>
-                    <p> Hackathon project winner.</p>
-                    <a href="https://justcasuallyjames.github.io/dogelon-much/#/dogelon-much/command-center"><em class="fas fa-external-link-alt"></em> Demo</a>
-                </div>
-            </div>
-            </div>
-          </div>
-    </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Elvis Lin">
+  <meta name="description" content="Elvis' Portfolio Website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link href="https://fonts.googleapis.com/css?family=Chivo:300,700%7CPlayfair+Display:700i" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/portfolio.css">
+  <link rel="icon" href="styles/using_laptop.svg">
+  <link rel="stylesheet" href="/styles/all.min.css">
+  <title>Projects</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-light" id="elvis-nav">
+    <a class="navbar-brand" href="index.html"><img style="height: 3em;" src="styles/using_laptop.svg"
+        alt="navbar logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="projects.html">Projects <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- <div style="height: 6em; width: 100%"></div> -->
+  <div class="container-fluid" id="project-section">
+    <div class="row" id="projects-intro">
+      <div class="col-sm-12">
+        <h1>Projects</h1>
+        <p>These are projects I've done to learn skills such as React and version control.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="project-card">
+          <h1>Spense</h1>
+          <div id="spense"></div>
+          <p></p>
+          <p>Hackathon project built using ReactJS, SCSS, and Firebase</p>
+          <a href="https://github.com/JustCasuallyJames/Spense" target="_blank"><em class="fas fa-external-link-alt"></em> GitHub</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="project-card">
+          <h1>Dogelon Much Game</h1>
+          <div id="dogelon"></div>
+          <p></p>
+          <p> Hackathon project winner built using ReactJS, SCSS</p>
+          <a href="https://justcasuallyjames.github.io/dogelon-much/#/dogelon-much/command-center" target="_blank"><em
+              class="fas fa-external-link-alt" ></em> Demo</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="project-card">
+          <h1>Photography Portfolio</h1>
+          <div id="photo-portfolio"></div>
+          <p></p>
+          <p>Photography portfolio built using HTML, CSS, and JS</p>
+          <a href="https://elvislin125.github.io/ElvisLinPhotography/index.html" target="_blank"><em
+              class="fas fa-external-link-alt"></em> Demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="row" class="project-row">
+      <div class="col-md-4">
+        <div class="project-card">
+          <h1>Tomatodoro Timer</h1>
+          <div id="tomatodoro"></div>
+          <p></p>
+          <p>Project to learn React.</p>
+          <a href="https://tomatodoro.netlify.app/" target="_blank"><em class="fas fa-external-link-alt"></em> Demo</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="project-card">
+          <h1>COVID-19 Tracker</h1>
+          <div id="covid"></div>
+          <p></p>
+          <p>First hackathon project that tracks Covid-19 symptoms</p>
+          <a href="https://github.com/JustCasuallyJames/Covid-Tracker" target="_blank"><em class="fas fa-external-link-alt"></em>
+            Github</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</body>
+
 </html>
