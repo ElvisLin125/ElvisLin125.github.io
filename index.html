@@ -11,32 +11,43 @@ EMAIL: elvism1@uci.edu
   <meta name="author" content="Elvis Lin">
   <meta name="description" content="Elvis' Portfolio Website">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/portfolio.css">
   <link href="https://fonts.googleapis.com/css?family=Chivo:300,700%7CPlayfair+Display:700i" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <link rel="icon" href="styles/using_laptop.svg">
   <link rel="stylesheet" href="/styles/all.min.css">
   <title>ElvisLin</title>
   <script>
     function scrolldiv(section) {
-        var elem = document.getElementById(section);
-        elem.scrollIntoView(true);
+      var elem = document.getElementById(section);
+      elem.scrollIntoView(true);
     }
   </script>
 </head>
+
 <body>
   <!-- <p>
     <a href="http://validator.w3.org/check?uri=referer">
        W3C validator
     </a>
   </p> -->
-  <nav class="navbar navbar-expand-sm navbar-light bg-light" id="elvis-nav">
-    <a class="navbar-brand" onclick="scrolldiv('main-section')"><img style="height: 3em;" src="styles/using_laptop.svg" alt="navbar logo"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light hidden" id="elvis-nav">
+    <a class="navbar-brand" onclick="scrolldiv('main-section')"><img style="height: 3em;" src="styles/using_laptop.svg"
+        alt="navbar logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -50,34 +61,128 @@ EMAIL: elvism1@uci.edu
         <li class="nav-item">
           <a class="nav-link" href="projects.html">Projects</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Elvis_Lin_Resume.pdf" target="_blank">Resume</a>
+        </li>
       </ul>
     </div>
   </nav>
   <div style="height: 4.5em; width: 100%"></div>
+
   <div class="container-fluid" id="main-section">
-    <div class="row" id="main-row">
-      <div class="col-sm-6" >
-        <img src="styles/using_laptop_circle.svg" id="avatar" alt="Guy using laptop">
+    <section class="hidden">
+      <div class="row" id="main-row">
+        <div class="col-sm-6">
+          <img src="styles/using_laptop_circle.svg" id="avatar" alt="Guy using laptop">
+        </div>
+        <div class="col-sm-6" id="intro">
+          <h1>Elvis Lin</h1>
+          <p>Web Development Portfolio</p>
+          <button type="button" class="btn btn-outline-primary" id="intro-btn" onclick="scrolldiv('about-section')">Learn
+            More</button>
+        </div>
       </div>
-      <div class="col-sm-6" id="intro">
-        <h1>Elvis Lin</h1>
-        <p>Web Development Portfolio</p>
-        <button type="button" class="btn btn-outline-primary" id="intro-btn" onclick="scrolldiv('about-section')">Learn More</button>
+    </section>
+    
+
+  </div>
+
+  <div class="container-fluid text-center" id="about-section">
+    <!-- <div class="row" id="about-row">
+      <div class="col"> -->
+    <section class="hidden">
+      <p>My name is Elvis Lin. I'm a Software Engineering student at the University of California, Irvine.</p>
+    <span>
+      <a href="https://www.linkedin.com/in/elvislin125/"><em class="fab fa-linkedin" alt="linkedin"></em></a>
+      <a href="https://github.com/ElvisLin125" alt="github"><em class="fab fa-github-square"></em></a>
+      <a href="https://www.instagram.com/elvis._.lin/?hl=en" alt="instagram"><em
+          class="fab fa-instagram-square"></em></a>
+    </span>
+    </section>
+    
+
+  </div>
+
+  <div class="container" id="project-section">
+    <div class="row" id="projects-intro">
+      <div class="col-sm-12">
+        <h1>Projects</h1>
+        <p>These are projects I've done to learn skills such as React and version control.</p>
       </div>
     </div>
-  </div>
-  <div class="container-fluid" id="about-section">
-    <div class="row" id="about-row">
-      <div class="col-sm-7">
-        <p>My name is Elvis Lin. <br> I'm a Software Engineering student at the University of California, Irvine.</p>
-        <a href="https://www.linkedin.com/in/elvislin125/" ><em class="fab fa-linkedin" alt="linkedin"></em></a>
-        <a href="https://github.com/ElvisLin125" alt="github"><em class="fab fa-github-square"></em></a>
-        <a href="https://www.instagram.com/elvis._.lin/?hl=en" alt="instagram"><em class="fab fa-instagram-square"></em></a>
+    <div class="card-deck">
+      <div class="card">
+        <a href="https://justcasuallyjames.github.io/dogelon-much/#/dogelon-much/command-center" target="blank">
+          <img class="card-img-top" src="styles/dogelon.png" alt="Card image cap">
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">Dogelon Much Game</h4>
+          <p class="card-text">Hackathon project winner. <br> Built with React.js</p>
+          <a href="https://justcasuallyjames.github.io/dogelon-much/#/dogelon-much/command-center"><em class="fas fa-external-link-alt"></em> Demo</a>
+        </div>
       </div>
-      <div class="col-sm-5">
-        <img src="/styles/relaxing.svg" id="relaxing" alt="Guy relaxing with laptop">
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
       </div>
     </div>
-  </div>
+    
+    <div class="row row-cols-1 row-cols-md-3" id="project-row">
+      <div class="col">
+        <div class="project-card">
+          <h1>Tomatodoro Timer</h1>
+          <div id="tomatodoro"></div>
+          <p></p>
+          <p>Project to learn React.</p>
+          <a href="https://tomatodoro.netlify.app/"><em class="fas fa-external-link-alt"></em> Demo</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="project-card">
+          <h1>COVID-19 Tracker</h1>
+          <div id="covid"></div>
+          <p></p>
+          <p>Hackathon project.</p>
+          <a href="https://github.com/JustCasuallyJames/Covid-Tracker"><em class="fas fa-external-link-alt"></em>
+            Demo</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="project-card">
+          <h1>Dogelon Much Game</h1>
+          <div id="dogelon"></div>
+          <p></p>
+          <p> Hackathon project winner.</p>
+          <a href="https://justcasuallyjames.github.io/dogelon-much/#/dogelon-much/command-center"><em
+              class="fas fa-external-link-alt"></em> Demo</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="project-card">
+          <h1>Tomaetodoro Timer</h1>
+          <div id="tomatodoro"></div>
+          <p></p>
+          <p>Project to learn React.</p>
+          <a href="https://tomatodoro.netlify.app/"><em class="fas fa-external-link-alt"></em> Demo</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  
+  <script src="app.js"></script>
 </body>
+
 </html>
