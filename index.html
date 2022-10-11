@@ -11,23 +11,24 @@ EMAIL: elvism1@uci.edu
   <meta name="author" content="Elvis Lin">
   <meta name="description" content="Elvis' Portfolio Website">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/portfolio.css">
   <link href="https://fonts.googleapis.com/css?family=Chivo:300,700%7CPlayfair+Display:700i" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
   <link rel="icon" href="styles/using_laptop.svg">
   <link rel="stylesheet" href="/styles/all.min.css">
+
   <title>ElvisLin</title>
   <script>
     function scrolldiv(section) {
@@ -59,7 +60,7 @@ EMAIL: elvism1@uci.edu
           <a class="nav-link" onclick="scrolldiv('about-section')">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="projects.html">Projects</a>
+          <a class="nav-link" onclick="scrolldiv('project-section')">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Elvis_Lin_Resume.pdf" target="_blank">Resume</a>
@@ -77,12 +78,13 @@ EMAIL: elvism1@uci.edu
         <div class="col-sm-6" id="intro">
           <h1>Elvis Lin</h1>
           <p>Web Development Portfolio</p>
-          <button type="button" class="btn btn-outline-primary" id="intro-btn" onclick="scrolldiv('about-section')">Learn
+          <button type="button" class="btn btn-outline-primary" id="intro-btn"
+            onclick="scrolldiv('about-section')">Learn
             More</button>
         </div>
       </div>
     </section>
-    
+
 
   </div>
 
@@ -91,96 +93,82 @@ EMAIL: elvism1@uci.edu
       <div class="col"> -->
     <section class="hidden">
       <p>My name is Elvis Lin. I'm a Software Engineering student at the University of California, Irvine.</p>
-    <span>
-      <a href="https://www.linkedin.com/in/elvislin125/"><em class="fab fa-linkedin" alt="linkedin"></em></a>
-      <a href="https://github.com/ElvisLin125" alt="github"><em class="fab fa-github-square"></em></a>
-      <a href="https://www.instagram.com/elvis._.lin/?hl=en" alt="instagram"><em
-          class="fab fa-instagram-square"></em></a>
-    </span>
+      <span>
+        <a href="https://www.linkedin.com/in/elvislin125/"><em class="fab fa-linkedin" alt="linkedin"></em></a>
+        <a href="https://github.com/ElvisLin125" alt="github"><em class="fab fa-github-square"></em></a>
+        <a href="https://www.instagram.com/elvis._.lin/?hl=en" alt="instagram"><em
+            class="fab fa-instagram-square"></em></a>
+      </span>
     </section>
-    
+
 
   </div>
 
-  <div class="container" id="project-section">
-    <div class="row" id="projects-intro">
-      <div class="col-sm-12">
-        <h1>Projects</h1>
-        <p>These are projects I've done to learn skills such as React and version control.</p>
-      </div>
-    </div>
-    <div class="card-deck">
-      <div class="card">
-        <a href="https://justcasuallyjames.github.io/dogelon-much/#/dogelon-much/command-center" target="blank">
-          <img class="card-img-top" src="styles/dogelon.png" alt="Card image cap">
-        </a>
-        <div class="card-body">
-          <h4 class="card-title">Dogelon Much Game</h4>
-          <p class="card-text">Hackathon project winner. <br> Built with React.js</p>
-          <a href="https://justcasuallyjames.github.io/dogelon-much/#/dogelon-much/command-center"><em class="fas fa-external-link-alt"></em> Demo</a>
+  <div class="container-fluid" id="project-section">
+    <section class="hidden">
+      <div class="row" id="projects-intro">
+        <div class="col-sm-12">
+          <h1>Projects</h1>
+          <p>These are projects I've done to learn skills such as React and version control.</p>
         </div>
       </div>
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <div class="row row-cols-1 row-cols-md-2" id="card-container">
+        <div class="col mb-4 test hidden">
+          <div class="card h-100">
+            <a href="https://justcasuallyjames.github.io/dogelon-much/#/dogelon-much/command-center" target="blank">
+              <img class="card-img-top" src="styles/dogelon.png" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <h4 class="card-title">Dogelon Much Game</h4>
+              <p class="card-text">Hackathon project winner. <br> Built with React.js</p>
+              <a href="https://justcasuallyjames.github.io/dogelon-much/#/dogelon-much/command-center"
+                target="_blank"><em class="fas fa-external-link-alt"></em> Demo</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <div class="col mb-4 test hidden">
+          <div class="card h-100">
+            <img class="card-img-top" src="styles/spense.PNG" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Spense</h4>
+              <p class="card-text">Hackathon project built using ReactJS, SCSS, and Firebase</p>
+              <a href="https://github.com/JustCasuallyJames/Spense" target="_blank"><em
+                  class="fas fa-external-link-alt"></em> GitHub</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    
-    <div class="row row-cols-1 row-cols-md-3" id="project-row">
-      <div class="col">
-        <div class="project-card">
-          <h1>Tomatodoro Timer</h1>
-          <div id="tomatodoro"></div>
-          <p></p>
-          <p>Project to learn React.</p>
-          <a href="https://tomatodoro.netlify.app/"><em class="fas fa-external-link-alt"></em> Demo</a>
+        <div class="col mb-4 test hidden">
+          <div class="card h-100">
+            <img class="card-img-top" src="styles/photo-portfolio.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Photography Portfolio Page</h4>
+              <p class="card-text">Photography portfolio built using HTML, CSS, and JS</p>
+              <a href="https://elvislin125.github.io/ElvisLinPhotography/index.html" target="_blank"><em
+                  class="fas fa-external-link-alt"></em> Demo</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="project-card">
-          <h1>COVID-19 Tracker</h1>
-          <div id="covid"></div>
-          <p></p>
-          <p>Hackathon project.</p>
-          <a href="https://github.com/JustCasuallyJames/Covid-Tracker"><em class="fas fa-external-link-alt"></em>
-            Demo</a>
+        <div class="col mb-4 test hidden">
+          <div class="card h-100 test">
+            <img class="card-img-top" src="styles/tomatodoro.PNG" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Tomatodoro</h4>
+              <p class="card-text">Project to learn React.</p>
+              <a href="https://tomatodoro.netlify.app/" target="_blank"><em class="fas fa-external-link-alt"></em>
+                Demo</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="project-card">
-          <h1>Dogelon Much Game</h1>
-          <div id="dogelon"></div>
-          <p></p>
-          <p> Hackathon project winner.</p>
-          <a href="https://justcasuallyjames.github.io/dogelon-much/#/dogelon-much/command-center"><em
-              class="fas fa-external-link-alt"></em> Demo</a>
-        </div>
-      </div>
-      <div class="col">
-        <div class="project-card">
-          <h1>Tomaetodoro Timer</h1>
-          <div id="tomatodoro"></div>
-          <p></p>
-          <p>Project to learn React.</p>
-          <a href="https://tomatodoro.netlify.app/"><em class="fas fa-external-link-alt"></em> Demo</a>
-        </div>
-      </div>
-    </div>
-    </div>
 
-  
+      </div>
+    </section>
+
+
+  </div>
+
+
+
+
   <script src="app.js"></script>
 </body>
 
