@@ -82,10 +82,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-card {
-    padding: 3em;
+    padding: 2em;
     border: 1px solid #578687;
     border-radius: 5px;
     background-color: #578687;
+    margin-bottom: 1em;
 }
 
 .project-card a, .project-card a:visited{
@@ -100,12 +101,21 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
-#dogelon, #covid, #tomatodoro {
+#dogelon, #covid, #tomatodoro, #spense, #photo-portfolio {
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     width: 100%;
-    height: 10rem;
+    height: 15rem;
+    margin-top: 1.5em;
     border-radius: 15px;
+}
+
+#photo-portfolio {
+    background-image: url("photo-portfolio.PNG");
+}
+
+#spense {
+    background-image: url("spense.PNG");
 }
 
 #dogelon {
@@ -165,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-top: auto;
         margin-bottom: auto;
     }
-    #main-row, #about-row, #project-row{
+    #main-row, #about-row{
         height: 100vh;
     }
 }
