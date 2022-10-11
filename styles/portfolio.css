@@ -60,7 +60,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     color: white;
     font-size: 2em;
-    text-align: left;
+
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    padding: 2em;
 }
 
 #relaxing {
@@ -74,6 +79,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     font-size: 1em;
     margin-top: 0.5em;
+    padding: 3em;
 }
 
 .project-card {
@@ -93,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fab {
-    color: #8EC9DF;
+    color: white;
 }
 
 #dogelon, #covid, #tomatodoro, #spense, #photo-portfolio {
@@ -205,5 +211,54 @@ h1, h2, h3, h4, h5, h6 {
     #project-section {
         margin-top: 0.5em;
     }
+
+    #about-section {
+        font-size: 1.5em;
+    }
+}
+
+/* ANIMATIONS */
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all .5s;
+    transform: translateY(-20%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.container-fluid > .hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-10%);
+    transition: all 1s;
+}
+
+.container-fluid > .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.test:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.test:nth-child(3) {
+    transition-delay: 300ms;
+}
+.test:nth-child(4) {
+    transition-delay: 300ms;
 }
 
