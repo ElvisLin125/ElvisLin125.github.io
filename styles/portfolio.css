@@ -76,10 +76,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #EEEEE7;
     scroll-margin-top: 4rem;
     height: 100vh;
-    width: 100%;
+    width: 90%;
     font-size: 1em;
     margin-top: 0.5em;
-    padding: 3em;
+    padding: 5em;
 }
 
 .project-card {
@@ -210,6 +210,8 @@ h1, h2, h3, h4, h5, h6 {
 
     #project-section {
         margin-top: 0.5em;
+        padding: 2em;
+        width: 100%;
     }
 
     #about-section {
