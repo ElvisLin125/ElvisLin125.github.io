@@ -228,6 +228,10 @@ h1, h2, h3, h4, h5, h6 {
     #about-section {
         font-size: 1.5em;
     }
+
+    .test:nth-child(2), .test:nth-child(3), .test:nth-child(4){
+        transition-delay: 0ms;
+    }
 }
 
 
