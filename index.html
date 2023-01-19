@@ -35,6 +35,22 @@ EMAIL: elvism1@uci.edu
       var elem = document.getElementById(section);
       elem.scrollIntoView(true);
     }
+
+    const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting) {
+            console.log(entry)
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+console.log(hiddenElements)
+hiddenElements.forEach((el) => observer.observe(el)); 
+
   </script>
 </head>
 
@@ -169,11 +185,6 @@ EMAIL: elvism1@uci.edu
 
 
   </div>
-
-
-
-
-  <script src="app.js"></script>
 </body>
 
 </html>
